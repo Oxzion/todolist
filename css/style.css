@@ -13,7 +13,6 @@ body {
     padding: 20px;
 }
 
-/* Link global */
 a {
     color: #3498db;
     text-decoration: none;
@@ -23,8 +22,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Container utama */
-.container, .login-container {
+.container {
     max-width: 700px;
     margin: 50px auto;
     background: #fff;
@@ -33,7 +31,6 @@ a:hover {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Judul halaman */
 h2 {
     text-align: center;
     margin-bottom: 25px;
@@ -42,83 +39,6 @@ h2 {
     font-weight: 600;
 }
 
-/* Form login & register */
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    margin-bottom: 5px;
-    font-weight: 500;
-    margin-top: 15px;
-    color: #555;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="date"],
-textarea,
-select {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 15px;
-    transition: border-color 0.3s ease;
-}
-
-input:focus,
-select:focus,
-textarea:focus {
-    border-color: #3498db;
-    outline: none;
-}
-
-textarea {
-    resize: vertical;
-    min-height: 100px;
-}
-
-button {
-    margin-top: 25px;
-    padding: 12px;
-    background-color: #3498db;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-button:hover {
-    background-color: #2980b9;
-}
-
-/* Pesan error */
-.error {
-    background-color: #ffe6e6;
-    color: #d9534f;
-    padding: 12px;
-    margin-bottom: 15px;
-    border: 1px solid #d9534f;
-    border-radius: 6px;
-    font-size: 14px;
-}
-
-.success {
-    background-color: #e8f5e9;
-    color: #28a745;
-    padding: 12px;
-    margin-bottom: 15px;
-    border: 1px solid #c3e6cb;
-    border-radius: 6px;
-    font-size: 14px;
-}
-
-/* Tabel tugas */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -155,30 +75,6 @@ table a:hover {
     color: #256ea9;
 }
 
-/* Responsive */
-@media (max-width: 600px) {
-    .container, .login-container {
-        margin: 20px;
-        padding: 20px;
-    }
-
-    h2 {
-        font-size: 20px;
-    }
-}
-/* ========== BUTTON STYLES ========== */
-
-/* Tombol Tambah Tugas */
-.btn-primary {
-    background-color: #2ecc71;
-    color: white;
-}
-
-.btn-primary:hover {
-    background-color: #27ae60;
-    transform: translateY(-2px);
-}
-/* Tombol Logout */
 .logout-btn {
     display: inline-block;
     padding: 10px 20px;
@@ -192,4 +88,14 @@ table a:hover {
 
 .logout-btn:hover {
     background-color: #e63900; 
+}
+
+.btn-primary {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #27ae60;
+    transform: translateY(-2px);
 }
